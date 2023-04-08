@@ -6,62 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/pokeView"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_marginTop="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/download__2_" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/poke_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next Pokemon"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="566dp" />
-
-    <TextView
-        android:id="@+id/height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Weight:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pokeView"
-        android:layout_marginTop="70dp"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="305dp"
-        android:textSize="20dp"/>
-
-    <TextView
-        android:id="@+id/weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Height:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/height"
-        android:layout_marginTop="70dp"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="385dp"
-        android:textSize="20dp"/>
-
-    <TextView
-        android:id="@+id/pokeName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pokeball"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="25dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
